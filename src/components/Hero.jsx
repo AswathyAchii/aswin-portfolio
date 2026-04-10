@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
+import profileImg from '../assets/profile.jpg'
 
 const ROLES = [
   'Sales Manager',
@@ -105,7 +106,7 @@ export default function Hero() {
             transition={{ duration: .75, delay: .3, ease: 'easeOut' }}
           >
             <img
-              src="/profile.jpg"
+              src={profileImg}
               alt="Aswin T G"
               className="hero-photo-img"
             />
